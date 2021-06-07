@@ -17,7 +17,7 @@ Steps in the Data Pipeline:
 
 
 ### The Process
-#### Retrieve data from CPBL website
+#### 1. Retrieve data from CPBL website
 
 I wrote a website crawler in Python to retrieve data which include the final batting scores of starting lineups and the final results of every game from 1990 to 2020.
 
