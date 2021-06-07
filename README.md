@@ -34,7 +34,7 @@ Now that the CPBL data is stored in a MySQL database and the next step is to tra
 a.	`rowdata_to_starschema.sql`:
 This SQL script is mainly doing the basic jobs for next two steps. Load the row data into database, clean the data and finally create a star schema table. 
 
-![](CPBL_Data .png)
+![](CPBL_Data.png)
 
 
 b.	`scoretables_for_players.sql`:
