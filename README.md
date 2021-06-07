@@ -20,6 +20,7 @@ Steps in the Data Pipeline:
 #### Retrieve data from CPBL website
 
 I wrote a website crawler in Python to retrieve data which include the final batting scores of starting lineups and the final results of every game from 1990 to 2020.
+
 a.	`match_game_crawler.py`:
 The main function of this script is to retrieve all the game dates and IDs which were filled into the URLs. Each URL contains all the batting information of each game, so gathering all the game dates and id is essential.
 
@@ -29,3 +30,32 @@ By collected URLs, we can easily have every match’s final results and every ba
 
 #### 2.	Transforming and Loading the data
 Now that the CPBL data is stored in a MySQL database and the next step is to transform the data into a star schema. All the tables are created on MySQL and the transformation are done in SQL. The SQL scripts are shown below:
+
+a.	`rowdata_to_starschema.sql`:
+This SQL script is mainly doing the basic jobs for next two steps. Load the row data into database, clean the data and finally create a star schema table. 
+
+b.	`scoretables_for_players.sql`:
+There are two tables are created in this script. 
+StaticsScore: StaticsScore is grouped by year, batting and name. Therefore, each player’s batting scores in every year can be known. 
+statplayscore: Statplayscore is grouped by batting and name. This table mainly shows all the batting scores of his whole player life.
+
+c.	`winning_ratio_of_player.sql`:
+There are three tables are created. 
+countstarline: Countstarline shows the times he has to be on the batting starting lineup and.
+winningstarline: Winningstarline shows the winning times that the team won the game when the player was on the batting starting lineup. 
+winingratio: Winingratio shows the winning ratio when a player on the starting lineup.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
