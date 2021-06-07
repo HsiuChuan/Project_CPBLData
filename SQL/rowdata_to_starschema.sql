@@ -1,4 +1,4 @@
-grant all privileges on *.* to root@localhost identified by 'ji32k7mysql' with grant option;
+grant all privileges on *.* to root@localhost identified by '' with grant option;
 SET SQL_SAFE_UPDATES=0
 
 /*
