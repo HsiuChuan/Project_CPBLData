@@ -16,7 +16,7 @@ Steps in the Data Pipeline:
 3.	Plotly Dashboard is used to retrieve data from database and visualize the data by using user interface on HEROKU.
 
 
-### The Process
+## The Process
 #### 1. Retrieve data from CPBL website
 
 I wrote a website crawler in Python to retrieve data which include the final batting scores of starting lineups and the final results of every game from 1990 to 2020.
