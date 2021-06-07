@@ -2,7 +2,7 @@
 Collect CPBL(中華職棒) batting start lineups data and visualize the information.
 
 ## Goal
-This project is motivated by a post on PTT forum on baseball discussion titled “Who is the worst batting fourth player in CPBL?”. [閒聊] 中職史上最爛的第四棒是誰? As a baseball fan, this question sparked my interests and motivated me to find out the answers. 
+  This project is motivated by a post on PTT forum on baseball discussion titled “Who is the worst batting fourth player in CPBL?”. [閒聊] 中職史上最爛的第四棒是誰? As a baseball fan, this question sparked my interests and motivated me to find out the answers. 
 With some effort, all the batting starting lineups players’ scores are collected in these 30 years & 7840 games, and store into database and shown on a simple statics website. We can easily retrieve the batting sores on which batting order that we needed and order it by the parameters that we want. If you try to go further on single player’s score, this website can meet demand.
 
 
@@ -27,12 +27,17 @@ The main function of this script is to retrieve all the game dates and IDs which
 b.	`batting_data_crawler.py`:
 By collected URLs, we can easily have every match’s final results and every batting starting lineups player’ scores. All the data were collected into dataframe, and stored into database.
 
+![](CPBL_score.png)
+
 
 #### 2.	Transforming and Loading the data
 Now that the CPBL data is stored in a MySQL database and the next step is to transform the data into a star schema. All the tables are created on MySQL and the transformation are done in SQL. The SQL scripts are shown below:
 
 a.	`rowdata_to_starschema.sql`:
 This SQL script is mainly doing the basic jobs for next two steps. Load the row data into database, clean the data and finally create a star schema table. 
+
+![](CPBL_Data.png)
+
 
 b.	`scoretables_for_players.sql`:
 There are two tables are created in this script. 
