@@ -34,7 +34,6 @@ By collected URLs, we can easily have every match’s final results and every ba
 
 ![](CPBL_score.png)
 
-
 #### 2.	Transforming and Loading the data
 Now that the CPBL data is stored in a MySQL database and the next step is to transform the data into a star schema. All the tables are created on MySQL and the transformation are done in SQL. The SQL scripts are shown below:
 
