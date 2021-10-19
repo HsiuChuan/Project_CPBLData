@@ -6,7 +6,7 @@ Collect CPBL(中華職棒) batting start lineups data and visualize the informat
   This project is motivated by a post on PTT forum on baseball discussion titled “Who is the worst batting fourth player in CPBL?”. [閒聊] 中職史上最爛的第四棒是誰? As a baseball fan, this question sparked my interests and motivated me to find out the answers. 
 With some effort, all the batting starting lineups players’ scores are collected in these 30 years & 7840 games, and store into database and shown on a simple statics website. We can easily retrieve the batting sores on which batting order that we needed and order it by the parameters that we want. If you try to go further on single player’s score, this website can meet demand.
 
-
+[CPBL Start Lineups Data](http://cpbldata.herokuapp.com/)
 
 
 ## ETL Pipeline Overview
