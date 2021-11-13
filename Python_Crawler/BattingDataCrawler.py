@@ -11,7 +11,7 @@ class MatchGameRun:
 
     def waiting(self):
         """
-        It need some time to wait after every request.
+        It takes some time to wait after every request.
         """
         delay_choices = [5, 10, 6, 11]  # 延遲的秒數
         delay = random.choice(delay_choices)  # 隨機選取秒數
